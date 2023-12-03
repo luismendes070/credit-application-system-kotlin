@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository
 interface CreditRepository: JpaRepository<Credit, Long> {
     fun save(credit: Credit): Credit
 
-    @Query(value="SELECT * FROM CREDIT WHERE CREDIT_ID = ?1", nativeQuery = true)
+    @Query(value="SELECT * FROM CREDIT WHERE CREDIT_ID = ?l", nativeQuery = true)
     fun findAllByCredits(customerId: Long): List<Credit>
 
 
