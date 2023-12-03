@@ -10,7 +10,7 @@ data class Credit (
     val creditValue: BigDecimal = BigDecimal.ZERO,
     val dayFirstInstallment: LocalDate,
     val numberOfInstallments: Int = 0,
-    val status: Status.APPROVED,
+    val status: Status = Status.IN_PROGRESS,
     val customer: Customer? = null,
     val id:Long? = null
 )
